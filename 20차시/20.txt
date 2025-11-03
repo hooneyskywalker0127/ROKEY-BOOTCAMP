@@ -1,0 +1,56 @@
+scikit-learn 특히 중요
+
+statsmodels : 통계와 관련된 모델을 다룸, 그렇게 많이쓰지 않음
+3페이지 주요기능중 선형 및 로지스틱 회귀분석만
+데이터 탐색 및 시각화은 조금
+import statsmodels.api as sm
+선형회귀 : 
+레이블 = 라벨 = 설명 = 옷의 택같은 = 정답
+모델 = 대표적으로 표현되는 형태
+독립변수 = 원인, 근거가 되는 변수, 입력값 ex)n시간
+종속변수 = 결과, 출력값 ex)점수
+
+수치 중 12페이지만 알면 된다
+
+statsmodels 면 끝 - > 힌트** 여기서 안나오고 sklearn에서
+알아야 할 함수.
+data = sm.datasets.get_rdataset("mtcars").data - R에서 데이터 가져오기
+model = sm.OLS(y, X).fit()
+fit() - 모델을 학습하는 함수
+
+import sklearn as sk
+from sklearn import svm
+from sklearn import metrics
+
+from sklearn.model_selection import train_test_split
+
+
+train_data, test_data, train_label, test_label = \
+
+train_test_split(iris_data, iris_label)
+
+clf = svm.SVC()
+clf.fit(train_data, train_label)
+
+pre = clf.predict(test_data)
+
+metrics.accuracy_score(test_label, pre)
+
+clf = svm.SVC()
+
+데이타프레임에 리스트 딕셔너리 넘파이어레이 가능
+
+train_test_split ***중요 학습데이터는 학습라벨은 학습라벨과 평가라벨로
+summary() - 결과요약 - 기울기, 절편 확인
+X = sm.add_constant(X) - 절편 상수항 추가
+
+scikit-learn 여기서 시험나옴
+fit(X, y), predict(X), score(X, y) 중요함수
+분류(classfication), 회귀(regression) 알고리즘만 기억
+
+xor 중요16페이지부터
+
+
+import scipy as sp
+from scipy.optimize import minimize
+

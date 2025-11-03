@@ -1,0 +1,36 @@
+opencv, seaborn
+
+seaborn 형식
+
+import seaborn as sns
+import matplotlib.pyplot as plt
+# 1. 샘플데이터 셋 로드
+객체1 = sns.load_dataset("")
+# 2. 기본 스타일 설정
+sns.set_theme(style='dark', 
+              palette="pastel")
+
+# 3. 그래프 표시
+객체2 = sns.~plot(data=객체1)
+plt.title("")
+plt.show()
+
+open cv 형식
+
+import cv2
+# 1. 이미지 파일 읽기
+cv2.imread(경로)
+# 2.
+cv2.imshow('제목', 원하는 이미지 객체)
+cv2.waitKey(0)                  
+cv2.destroyAllWindows() 
+
+
+기본 이미지 로드 및 표시 18페이지 시험
+cv2.imshow('제목', 원하는 이미지 객체)
+cv2.waitKey(0)                  
+cv2.destroyAllWindows() 
+
+
+cv2.resize(src,(300, 300))
+cv2.cvtColor(src, code)

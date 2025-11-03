@@ -1,0 +1,36 @@
+데이터 조작, 분석 - Pandas 라이브러리
+
+설치
+pip install pandas
+
+****pandas 주요 자료구조
+Series
+리스트, 딕셔너리를 사용해 객체 생성 가능
+
+
+***data frame 2차원테이블구조
+중첩 리스트, 딕셔너리 사용해 객체 생성 가능
+
+
+****중첩 for문 중요 : 이유 행렬, 2차원 데이터를 다루기 위해
+
+행(row)가로
+열(column)세로
+
+as pd(항상은 아니지만 관용적으로 붙임, pd는 별칭)
+
+csv 값이 콤마로 분류되어있는 파일
+
+정렬 방법 - 오름차순, 내림차순
+
+오름차순 
+ex) df.sort_values(by='Age')
+내림차순
+df.sort_values(by='Age', ascending=False)
+
+기초적 함수는 외워라
+loc = location 위치
+
+브로드캐스팅 = 자동으로 모양을 맞춰서 늘려준다
+
+중요하다라고 하긴 함 46페이 박스플롯 : 기술통계량 사용
